@@ -1,0 +1,34 @@
+.sidebar {
+    /* width: 200px; */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 50px;
+    margin: 40px;
+  }
+  
+  .sidebar h3 {
+    cursor: pointer;
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    /* border: 1px solid black; */
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 20px;
+  }
+  
+  .sidebar li:hover {
+    background-color: #eaeaea;
+  }
+  

@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import AllTasks from './AllTasks';
+import {Routes,Route} from "react-router-dom"
+import ElementTransfer from './ElementTransfer';
+import InfiniteScroll from './InfiniteScroll';
+import MindGame from './MindGame';
+import NestedList from "./Components4/NestedList"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Routes>
+      <Route path="/" element={<AllTasks/>}/>
+      <Route path='/element-transfer' element={<ElementTransfer/>}/>
+      <Route path='/infinite-scroll' element={<InfiniteScroll/>}/>
+      <Route path='/game' element={<MindGame/>}/>
+      <Route path='/nested-link' element={<NestedList/>}/>
+     </Routes>
     </div>
   );
 }

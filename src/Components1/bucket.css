@@ -1,0 +1,51 @@
+
+.bktOne-container,.bktTwo-container{
+    border: 1px solid black;
+    height: 70vh;
+    width: 50vb;
+    padding: 20px;
+}
+
+.bkts-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color:antiquewhite;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.btns button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+}
+
+.item-groups,.item-groups2{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    margin: 10px;
+    padding: 10px;
+}
+
+h4{
+    text-align: center;
+}
+
+.selected {
+    background-color: green;
+  }
