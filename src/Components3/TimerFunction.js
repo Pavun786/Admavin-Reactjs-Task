@@ -1,7 +1,8 @@
 
 import { useState } from "react";
 
-function TimerFunction({ setRandom }) {
+function TimerFunction({ setRandom,setScore,score }) {
+    // console.log(score)
     const [time, setTime] = useState();
 
     const timmer = (duration) => {
@@ -21,19 +22,22 @@ function TimerFunction({ setRandom }) {
             remainingTime = remainingTime - 1;
 
             if (remainingTime < 0) {
+                //  alert(`The Game is Ended..Your Total Point is ${score}`)
+                alert('The Game is Ended..!')
                 clearInterval(interval);
                 clearInterval(intervalId)
+               
+                 setScore(0)
                 setRandom(-1)
+                
             }
         }, 1000);
-
-       
-    };
+   };
 
     return (
-        <div className="timer">
+        <div className="timmer-group">
             {time}
-            <button onClick={() => timmer(10)}>Start</button>
+            <button className="timmer-btn" onClick={() => timmer(60)}>Start</button>
         </div>
     );
 }

@@ -20,11 +20,11 @@ function BoxList() {
 
     return (
         <div className="boxlist">
-            <div>
-                <TimerFunction  setRandom={(random)=>setRandom(random)} />
+            <div className="timmer">
+                <TimerFunction setScore={setScore}  score={score} setRandom={(random)=>setRandom(random)} />
             </div>
             <div className="boxes">{renderBoxes(random)}</div>
-            <div>Total Score : {score}</div>
+            <div className="score">Total Score : {score}</div>
         </div>
     );
 }

@@ -18,7 +18,7 @@ function SingleBox({num,value,score,setScore}){
 
     const hitButton = ()=>{
         let getValue = document.getElementById(num).innerText
-        
+           
         if(getValue == "HIT"){
             setColor(true)
             setScore(score+5)
@@ -30,7 +30,7 @@ function SingleBox({num,value,score,setScore}){
     }
    return(
         <div className="box" style={{backgroundColor: color ? "green" : ""}} id={num} onClick={hitButton}>
-           {showMessage}
+         <div className="text">{showMessage}</div>  
         </div>
     )
 }
